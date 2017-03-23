@@ -1,0 +1,22 @@
+{
+    "name": "basal/basal-skeleton",
+    "description": "Skeleton project for Basal",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Basal",
+            "email": "basal.php@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
