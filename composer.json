@@ -15,7 +15,13 @@
         }
     },
     "require": {
-        "php": ">=5.5"
+        "php": ">=5.5",
+        "basal/basal": "dev-master",
+        "basal/middleman-basal-middleware-dispatcher": "dev-master",
+        "basal/diactoros-basal-response-emitter": "dev-master",
+        "basal/league-route-middleware": "dev-master",
+        "basal/league-container-interop-service-provider": "dev-master",
+        "http-interop/http-factory-diactoros": "^0.2.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
