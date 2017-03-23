@@ -1,5 +1,5 @@
 # Basal skeleton
-Skeleton project for Basal.
+Skeleton project for [Basal](https://github.com/BasalPHP/basal).
 
 ## Installation
 Create a project via Composer:
