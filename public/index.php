@@ -1,5 +1,9 @@
 <?php
 
+// disable native error reporting
+error_reporting(null);
+ini_set('display_errors', 0);
+
 require __DIR__.'/../vendor/autoload.php';
 
 use Basal\Basal;

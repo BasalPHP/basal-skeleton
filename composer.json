@@ -25,5 +25,8 @@
         "vlucas/phpdotenv": "^2.4"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev": {
+        "middlewares/whoops": "^0.4.0"
+    }
 }
