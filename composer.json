@@ -21,7 +21,8 @@
         "basal/diactoros-basal-response-emitter": "dev-master",
         "basal/league-route-middleware": "dev-master",
         "basal/league-container-interop-service-provider": "dev-master",
-        "http-interop/http-factory-diactoros": "^0.2.0"
+        "http-interop/http-factory-diactoros": "^0.2.0",
+        "vlucas/phpdotenv": "^2.4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

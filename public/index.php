@@ -5,18 +5,23 @@ require __DIR__.'/../vendor/autoload.php';
 use Basal\Basal;
 use Basal\InteropServiceProvider\LeagueContainer\InteropServiceProviderContainer;
 use Basal\MiddlewareDispatcher\Middleman\MiddlemanMiddlewareDispatcher;
-use Basal\Middleware\LeagueRoute\LeagueRouteMiddleware;
-use Basal\Middleware\LeagueRoute\Provider\LeagueRouteMiddlewareInteropServiceProvider;
 use Basal\ResponseEmitter\Diactoros\DiactorosResponseEmitter;
+use Dotenv\Dotenv;
 use Http\Factory\Diactoros\ServerRequestFactory;
 use League\Container\Container;
-use League\Route\RouteCollection;
 
+// setup environment
+$dotenv = new Dotenv(__DIR__.'/..');
+$dotenv->load();
+$dotenv->required(['ENVIRONMENT']);
+
+// setup container
 $container = new InteropServiceProviderContainer(new Container());
 
 require __DIR__.'/../config/providers.php';
 require __DIR__.'/../config/services.php';
 
+//setup basal
 $basal = new Basal(
     new MiddlemanMiddlewareDispatcher(),
     new DiactorosResponseEmitter(),
