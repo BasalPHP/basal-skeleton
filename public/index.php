@@ -25,7 +25,7 @@ $container = new InteropServiceProviderContainer(new Container());
 require __DIR__.'/../config/providers.php';
 require __DIR__.'/../config/services.php';
 
-//setup basal
+// setup basal
 $basal = new Basal(
     new MiddlemanMiddlewareDispatcher(),
     new DiactorosResponseEmitter(),
