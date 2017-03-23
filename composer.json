@@ -1,7 +1,7 @@
 {
     "name": "basal/basal-skeleton",
     "description": "Skeleton project for Basal",
-    "type": "package",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
